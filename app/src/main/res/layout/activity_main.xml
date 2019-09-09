@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:text="R1"
+                    android:hint="user_id"
+                    android:id="@+id/user_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:text="Rajeev"
+                    android:hint="user_name"
+                    android:id="@+id/user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:text="test@test.com"
+                    android:hint="user_email"
+                    android:id="@+id/user_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_intent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Using Intent"
+                tools:layout_editor_absoluteX="145dp"
+                tools:layout_editor_absoluteY="148dp" />
+
+            <Button
+                android:id="@+id/button_shared_preference"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="using shared preferences"
+                tools:layout_editor_absoluteX="145dp"
+                tools:layout_editor_absoluteY="266dp" />
+
+            <Button
+                android:id="@+id/button_serializable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Serializable"
+                tools:layout_editor_absoluteX="153dp"
+                tools:layout_editor_absoluteY="442dp" />
+            <Button
+                android:id="@+id/button_serializable_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Serializable Data List"
+                tools:layout_editor_absoluteX="153dp"
+                tools:layout_editor_absoluteY="442dp" />
+
+            <Button
+                android:id="@+id/button_parcelable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Parcelable"
+                tools:layout_editor_absoluteX="166dp"
+                tools:layout_editor_absoluteY="576dp" />
+            <Button
+                android:id="@+id/button_parcelable_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Parcelable Data List Using Intent"
+                tools:layout_editor_absoluteX="166dp"
+                tools:layout_editor_absoluteY="576dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
